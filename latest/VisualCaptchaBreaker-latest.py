@@ -23,8 +23,8 @@ Greetz:					St0rn (0xbadcoded.com), nj8 (www.information-security.fr) and Emiya 
 - 	In the VisualCaptcha branch 5.*, a new protection mecanism was introduced with adding random bytes to each PNG. 
 	VisualCaptchaBreaker convert these PNG to JPG to bypass this security.
 	(@see github.com/emotionLoop/visualCaptcha/issues/2)
--	You need to update the two dictionaries dicoImgJpg and dicoImgPng with your JPG/PNG pictures checksum (if customized)
-	and with right images labels in your language. Default dictionaries provided are based on the default VisualCaptcha's image database in english.
+-	You need to update the dictionary dicoImg with your JPG/PNG pictures checksum and text-label for your language (if customized)
+	Default dictionaries provided are based on the default VisualCaptcha's image database in english and french.
 -	Tested successfully against VisualCaptcha demo page (demo.visualcaptcha.net), custom VisualCaptcha PoC with simple POST data and multipart/form-data.
 - 	Raw http request file process inspired from grimhacker.com/2015/04/07/raw-http-requests-to-burp-proxy/
 
