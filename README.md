@@ -118,6 +118,7 @@ dicoImg[6] 	= {"labelEN":u"Clip", 				"labelFR":u"le trombone", 				"md5SumPng":
 * Integrate audio-captcha breaking with the same methodology
 * Implement statistics to display breaking rate in real time
 * Manage better exception and error message
+* Create an all-in-one script to generate a custom image dictionary with Python syntaxe
 
 ## Misc
 
